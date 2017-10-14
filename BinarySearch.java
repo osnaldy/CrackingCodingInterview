@@ -1,5 +1,6 @@
 public class BinarySearch {
 
+    // Run time on binary search is O(log N) as the array is cut by half every time it compares its values with the target
     public boolean binarySearch(int[] numbers, int element) {
 
         int first = 0;
