@@ -4,12 +4,11 @@ public class BinarySearch {
 
         int first = 0;
         int last = numbers.length - 1;
+        while (first <= last) {
 
-        for (int i = 0; i < numbers.length; i++) {
+            int middle = (first + last) / 2;;
 
-            int middle = (first + last) / 2;
-
-            if (numbers[i] == element) {
+            if (numbers[middle] == element) {
 
                 return true;
             }
@@ -33,6 +32,6 @@ public class BinarySearch {
 
         int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7};
 
-        System.out.println(bs.binarySearch(arr, 9));
+        System.out.println(bs.binarySearch(arr, 8));
     }
 }
