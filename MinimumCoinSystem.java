@@ -1,21 +1,13 @@
 public class MinimumCoinSystem {
 
-    public int change(int x, int[] coins) {
-
-        int min = x;
-
-        for (int coin: coins) {
-
-            if (x - coin >= 0) {
-
-                int c = change(x - coin, coins);
-                if (min > c + 1) {
-                    min = c + 1;
-                }
+    public int test(int value, int[] coins){
+        int min = 1;
+        for(int coin: coins){
+            if(value >= coin) {
+                return min + test(value-coin,coins);
             }
         }
-
-        return min;
+        return min-1;
     }
 
     public static void main(String[] args) {
@@ -24,6 +16,6 @@ public class MinimumCoinSystem {
 
         MinimumCoinSystem minimumCoinSystem = new MinimumCoinSystem();
 
-        System.out.println("The minimum number of coins is: " + minimumCoinSystem.change(32, coins));
+        System.out.println("The minimum number of coins is: " + minimumCoinSystem.test(50, coins));
     }
 }
