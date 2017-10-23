@@ -43,7 +43,7 @@ public class BalanceParenthesis {
 
         BalanceParenthesis bp = new BalanceParenthesis();
 
-        String s = "{}{{}{}";
+        String s = "{}";
 
         char [] sc = s.toCharArray();
 
