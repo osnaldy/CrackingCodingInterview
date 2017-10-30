@@ -1,7 +1,7 @@
 public class GivenNumberReturnValueInWords {
 
-    private String [] singleDigit = {"one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen", "fourteen", "fifteen","sixteen","seventeen","eighteen","nineteen"};
-    private String [] doubleDigit = {"twenty", "thirty","forty","fifty","sixty","seventy","eighty","ninety"};
+    private String [] singleDigit = {"One","Two","Three","Four","Five","Six","Seven","Eight","Nine","ten","eleven","twelve","thirteen", "fourteen", "fifteen","sixteen","seventeen","eighteen","nineteen"};
+    private String [] doubleDigit = {"Twenty", "Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
     private String word = "";
 
     public String convertNumberToWord(int n) {
@@ -56,7 +56,7 @@ public class GivenNumberReturnValueInWords {
                 }
             }
         }
-        
+
         return word;
     }
 
